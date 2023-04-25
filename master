@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi tarjeta</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: whitesmoke;
+        }
+        .card {
+            width: 400px;
+            height: 540px;
+            background-color:white;
+            overflow: hidden;
+            border-radius: 14px;
+        }
+        .card img:nth-child(1) {
+            width: 100%;
+            z-index: 1;
+            position: relative;
+            bottom: 90px;
+        }
+        .card img:nth-child(2){
+            width: 150px;
+            height: 150px;
+            border-radius: 80px;
+            z-index: 2;
+            position: relative;
+            left:120px;
+            bottom: 170px;
+            border: 4px solid white;
+        }
+        .texto {
+            text-align: center;
+            position: relative;
+            bottom: 185px;
+            font-family: 'Segoe UI';
+        }
+        .name {
+            font-size: 22px;
+            font-weight: 600;
+            color: rgb(110, 110, 110);
+        }
+        .profession {
+            position: relative;
+            bottom: 25px;
+            font-weight: 400;
+            color: gray;
+        }
+        .info {
+            position: relative;
+            bottom: 180px;
+            display: flex;
+            justify-content: space-evenly;
+            font-family: 'Segoe UI';
+            color: gray;
+            font-weight: 300;
+        }
+        .boton input:nth-child(1) {
+            position: relative;
+            bottom: 180px;
+            left: initial;
+            width: 200px;
+            height: 60px;
+            border:1px solid rgb(212, 212, 212);
+            background-color: whitesmoke;
+            z-index: 3;
+        }
+        .boton input:nth-child(2) {
+            position: relative;
+            bottom: 244px;
+            left: 200px;
+            width: 200px;
+            height: 60px;
+            border:1px solid rgb(212, 212, 212);
+            background-color: whitesmoke;
+            z-index: 3;
+        }
+        .boton input:nth-child(3) {
+            position: relative;
+            bottom: 248px;
+            width: 400px;
+            height: 63px;
+            border:1px solid #68B984;
+            background-color: #68B984;
+            z-index: 3;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .seguidores {
+            position: relative;
+            bottom: 364px;
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Segoe UI';
+            color: gray;
+            font-weight: 400;
+            z-index: 4;
+        }
+        .follow {
+            position: relative;
+            bottom: 416px;
+            font-family: 'Segoe UI';
+            color: white;
+            font-weight: 600;
+            z-index: 4;
+            display: flex;
+            justify-content: center;
+        }
+        .numeros {
+            position: relative;
+            bottom: 434px;
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Segoe UI';
+            color: gray;
+            font-weight: 600;
+            z-index: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://images.pexels.com/photos/7566158/pexels-photo-7566158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="portada">
+        <img src="https://lh3.googleusercontent.com/BvnecUhVBbLvnLADatNQHmmA9YXeZmC5m2KXBNeqmtU0nhmQKgw0n0YKRtfccYGwWqzi37IVMzdS77m_NCnjO9En9o_vPndhKnbA46yNM_6aqDCleh4qc5mnsm2hVd3eGXUOm0NUi8nq6QWC5KTtt2dt_W28Qr-8vdTvoWW_QukqgE8Xz-3bUfp4D6Zyu3VBD4mY3Xwn-Alri8m-DpFY0efvK5Yovo1pn1rBBc34DuvXH9XcGR-uo_A_rEv5tvgJkApo9UnEjIM5Wo3ERt0o7WxsNwIv6P-L1qz0vkoIhx3v5h3l3nNI2JfPnARiyMH0fFG2W96Vd1uKW3mRxnWEFrVGXR49HhUdc_kPp0kKhBnYoFGzs80Ij9IblKQma-Iz_D2Kg-kxyp47aQXePsCPj1iyBrphfP3k6w_7-B5inufbnpwY51I_D8qyQGZ0K9mrt-Yw6r2ZIS9jai6LYlM6RPeFuOa_98NvEtrbuVkGHW0fc4wfGtBxT1kn_t6DO2tJay7vPYATIzMzi5ZFZCSh7blPkIqdb4aMobeWi3N2PnTDtCoPS85qHuKPy7_MjqTudFJW9zXoRIn_7WGf5nMWkBFVpTxQhaRhwO2E7XjKcwNO9uKz4AwqiNdPxiTHgdXXb3_A4eVPfvnbBvC9l0Wr36AMc3rOIpXIaae4MLdaORTPUGyJucXiwpdZWy0vGtTjBS-CLzwoGdbN0KeklRq89DqGBfQ2LP1kpDSpmdXS_0YlHYbag092yWYCRVy8ourmuSdWEnEuYgWMdVJ3mHS8n-Q2lGrDXB1MyDkAKhU9WY5UkXeWNgBRSG9qvMH7W7Ywj7pBeC5gYHZD1aQYBLc3ZL81s074r7MwS8RKHKltkpCyMMUuPoORdSfxvrw0FSjnHYsevv1Tk9SWa5JLC-F9Q8eABBE4Y8dqvYpol1pV=w656-h656-s-no?authuser=0" alt="perfil">
+        <div class="texto">
+            <p class="name">Oscar S. Monsalve</p>
+            <p class="profession">Frontend developer</p>
+        </div>
+        <div class="info">
+            <p>📍 Colombia</p>
+            <p>✉ Send E-mail</p>
+        </div>
+        <div class="boton">
+            <input type="button">
+            <input type="button">
+            <input type="button">
+        </div>
+        <div class="seguidores">
+            <p>Followers</p>
+            <p>Following</p>
+        </div>
+        <div class="numeros">
+            <p>7200</p>
+            <p>1500</p>
+        </div>
+        <div class="follow">
+            <p>Follow</p>
+        </div>
+    </div>
+</body>
+</html>
