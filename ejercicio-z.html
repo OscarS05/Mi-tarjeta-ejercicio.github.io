@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circule challenge</title>
+    <style>
+        div {
+            width:100px;
+            height: 100px;
+            position: absolute;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,93,1) 35%, rgba(0,212,255,1) 100%);
+            border-radius: 50px;
+            border:1px solid black;
+            rotate: 90deg;
+        }
+        .bola1 {
+            position: relative;
+            top: 50px;
+            z-index: 4;
+        }
+        .bola2 {
+            z-index: 3;
+        }
+        .bola3 {
+            position: relative;
+            top: 50px;
+            z-index: 2;
+        }
+        .bola4 {
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="bola1"></div>
+    <div class="bola2"></div>
+    <div class="bola3"></div>
+    <div class="bola4"></div>
+</body>
+</html>
